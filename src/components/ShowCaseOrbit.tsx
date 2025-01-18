@@ -3,7 +3,7 @@ import ShowCaseItem from "./ShowCaseItem";
 const ShowCaseOrbit = () => {
   const animationDuration = "30s";
   return (
-    <div className="bg-gray-400 h-[100%] w-[100%] duration-1000">
+    <div className="h-[100%] w-[100%] duration-1000 relative">
       <ShowCaseItem
         title="Main Placeholder Avatar"
         center="top-[30%] left-[41%]"

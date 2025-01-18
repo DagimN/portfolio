@@ -5,6 +5,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        "back-drop": "var(--bg-back-drop)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        "saturated-green": "var(--saturated-green)",
+      },
       keyframes: {
         "wide-orbit": {
           "0%": {
