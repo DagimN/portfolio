@@ -1,11 +1,14 @@
-import NavItem from "./NavItem";
+import ShowCaseItem from "./ShowCaseItem";
 
-const NavOrbit = () => {
+const ShowCaseOrbit = () => {
   const animationDuration = "30s";
   return (
     <div className="bg-gray-400 h-[100%] w-[100%] duration-1000">
-      <NavItem title="Main Placeholder Avatar" center="top-[30%] left-[41%]" />
-      <NavItem
+      <ShowCaseItem
+        title="Main Placeholder Avatar"
+        center="top-[30%] left-[41%]"
+      />
+      <ShowCaseItem
         title="Item 1"
         size="h-10 w-10"
         animation="animate-wide-orbit"
@@ -18,7 +21,7 @@ const NavOrbit = () => {
           delay: "-5s",
         }}
       />
-      <NavItem
+      <ShowCaseItem
         title="Item 2"
         size="h-10 w-10"
         animation="animate-wide-orbit"
@@ -31,7 +34,7 @@ const NavOrbit = () => {
           delay: "0s",
         }}
       />
-      <NavItem
+      <ShowCaseItem
         title="Item 3"
         size="h-20 w-20"
         animation="animate-narrow-orbit"
@@ -44,7 +47,7 @@ const NavOrbit = () => {
           delay: "-5s",
         }}
       />
-      <NavItem
+      <ShowCaseItem
         title="Item 4"
         size="h-20 w-20"
         animation="animate-narrow-orbit"
@@ -61,4 +64,4 @@ const NavOrbit = () => {
   );
 };
 
-export default NavOrbit;
+export default ShowCaseOrbit;

@@ -1,9 +1,9 @@
-import NavOrbit from "./components/NavOrbit";
+import ShowCaseOrbit from "./components/ShowCaseOrbit";
 
 const Portfolio = () => {
   return (
     <main className="h-screen">
-      <NavOrbit />
+      <ShowCaseOrbit />
     </main>
   );
 };

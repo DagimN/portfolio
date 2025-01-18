@@ -1,6 +1,6 @@
 import { EllipseAnimation } from "../types/ellipse_animation";
 
-const NavItem = ({
+const ShowCaseItem = ({
   title,
   center,
   size = "h-64 w-64",
@@ -75,4 +75,4 @@ const NavItem = ({
   );
 };
 
-export default NavItem;
+export default ShowCaseItem;
