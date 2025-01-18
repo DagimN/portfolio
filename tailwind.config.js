@@ -11,7 +11,6 @@ export default {
             transform:
               "rotate(0deg) translateX(var(--orbit-p-major-axis)) translateY(0px) rotate(0deg)",
           },
-        
           "25%": {
             transform:
               "rotate(90deg) translateX(0px) translateY(var(--orbit-p-minor-axis)) rotate(-90deg)",
@@ -51,29 +50,6 @@ export default {
               "rotate(360deg) translateY(var(--orbit-p-major-axis)) translateX(0px) rotate(-360deg)",
           },
         },
-
-        // orbit: {
-        //   "0%": {
-        //     transform:
-        //       "rotate(0deg) translateX(576px) translateY(0px) rotate(0deg)",
-        //   },
-        //   "25%": {
-        //     transform:
-        //       "rotate(90deg) translateX(0px) translateY(5px) rotate(-90deg)",
-        //   },
-        //   "50%": {
-        //     transform:
-        //       "rotate(180deg) translateX(-576px) translateY(0px) rotate(-180deg)",
-        //   },
-        //   "75%": {
-        //     transform:
-        //       "rotate(270deg) translateX(0px) translateY(-5px) rotate(-270deg)",
-        //   },
-        //   "100%": {
-        //     transform:
-        //       "rotate(360deg) translateX(576px) translateY(0px) rotate(-360deg)",
-        //   },
-        // },
       },
       animation: {
         "wide-orbit": "wide-orbit var(--orbit-duration) linear infinite",
