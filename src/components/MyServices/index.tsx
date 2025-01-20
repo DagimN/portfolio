@@ -3,7 +3,7 @@ import ServiceCard from "./components/ServiceCard";
 import data from "./data";
 
 const Services = () => {
-  const [serviceIndex, setServiceIndex] = useState(0);
+  const [serviceIndex, _setServiceIndex] = useState(0);
 
   return (
     <section className="relative h-[820px] w-full bg-black">
