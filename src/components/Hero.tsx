@@ -29,13 +29,16 @@ const Hero = () => {
           </h1>
         </header>
         <section className="flex col-span-3 gap-24 p-24">
-                  <div className="mt-32 w-96">
-                      <h1 className="text-saturated-green font-semibold text-3xl my-5">
-                          Hi there!!!
-                      </h1>
-                      <h2 className="text-gray-400 font-light">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus fugiat maxime expedita adipisci minima facere, non quaerat unde veniam omnis odio eveniet quae, blanditiis repellendus dicta mollitia temporibus vitae?
-                      </h2>
+          <div className="mt-32 w-96">
+            <h1 className="text-saturated-green font-semibold text-3xl my-5">
+              Hi there!!!
+            </h1>
+            <h2 className="text-gray-400 font-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem possimus fugiat maxime expedita adipisci minima facere,
+              non quaerat unde veniam omnis odio eveniet quae, blanditiis
+              repellendus dicta mollitia temporibus vitae?
+            </h2>
           </div>
           <div className="bg-gradient-to-br from-primary to-secondary rounded-full h-96 w-96">
             <img

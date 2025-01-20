@@ -1,4 +1,5 @@
 import Hero from "./components/Hero";
+import Services from "./components/Services";
 import ShowCaseOrbit from "./components/ShowCaseOrbit";
 
 const Portfolio = () => {
@@ -6,11 +7,9 @@ const Portfolio = () => {
     <main className="h-screen">
       <Hero />
       <ShowCaseOrbit />
-      <div>Services</div>
+      <Services />
       <div>Reviews</div>
-      <footer>
-        contacts
-      </footer>
+      <footer>contacts</footer>
     </main>
   );
 };
