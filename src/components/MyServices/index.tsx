@@ -1,4 +1,10 @@
+import { useState } from "react";
+import ServiceCard from "./components/ServiceCard";
+import data from "./data";
+
 const Services = () => {
+  const [serviceIndex, setServiceIndex] = useState(0);
+
   return (
     <section className="relative h-[820px] w-full bg-black">
       <div className="z-0">
@@ -17,13 +23,12 @@ const Services = () => {
         <h1 className="text-5xl text-saturated-green font-bold my-5">
           Services
         </h1>
-        <div className="p-10 bg-gray-400 bg-opacity-30 backdrop-blur-sm h-[75%] rounded-[50px] border-primary border-opacity-10 border-[1px]">
-          <div>UI/UX Design</div>
-          <div>Backend Servers</div>
-          <div>Full Stack</div>
-          <div>Mobile Development</div>
-          <div>Desktop Development</div>
-          <div>Bots i.e. Telegram/Discord</div>
+        <div className="bg-gray-400 w-full h-[75%] bg-opacity-30 backdrop-blur-sm  rounded-[50px] border-primary border-opacity-10 border-[1px]">
+          <ServiceCard
+            title={data[serviceIndex].title}
+            description={data[serviceIndex].description}
+            image={data[serviceIndex].image}
+          />
         </div>
       </div>
     </section>
