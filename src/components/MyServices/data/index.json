@@ -1,0 +1,32 @@
+[
+  {
+    "title": "UI/UX Design",
+    "description": "Crafting visually appealing and user-friendly interfaces",
+    "image": "src\\assets\\images\\ux.png"
+  },
+  {
+    "title": "Backend Servers",
+    "description": "Handling server-side logic, databases, and APIs",
+    "image": "src\\assets\\images\\server.png"
+  },
+  {
+    "title": "Full Stack",
+    "description": "Developing both front-end and back-end of applications",
+    "image": "src\\assets\\images\\stack.png"
+  },
+  {
+    "title": "Mobile Development",
+    "description": "Creating applications for iOS and Android",
+    "image": "src\\assets\\images\\mobile.png"
+  },
+  {
+    "title": "Desktop Development",
+    "description": "Building software applications for Windows, macOS, and Linux.",
+    "image": "src\\assets\\images\\desktop.png"
+  },
+  {
+    "title": "Bots",
+    "description": "Automating tasks and interactions i.e. Telegram/Discord etc",
+    "image": "src\\assets\\images\\bots.png"
+  }
+]
