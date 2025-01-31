@@ -8,7 +8,7 @@ const ReviewCard = ({
   review: string;
 }) => {
   return (
-    <div className="bg-white w-[350px] h-56 rounded-3xl mx-5 flex p-6 gap-5">
+    <div className="bg-zinc-600 w-[350px] h-56 rounded-3xl mx-5 flex p-6 gap-5">
       <img src={avatar} alt="" className="bg-gray-400 rounded-full h-16 w-16" />
       <div className="grid content-start">
         <h1 className="text-3xl mt-4">{reviewer}</h1>
