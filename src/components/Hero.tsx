@@ -4,7 +4,7 @@ const Hero = () => {
       <div className="h-[800px] w-full absolute z-0 opacity-30 bg-[url('https://capeeng.com/wp-content/uploads/2022/12/layer-wave.png')] bg-cover" />
       <section className="absolute z-10 w-full">
         <nav className="p-10 z-10 relative top-0">
-          <ul className="flex gap-3 justify-end text-saturated-green">
+          <ul className="flex gap-3 justify-between text-saturated-green">
             <li className="">
               <a href="#">Nav1</a>
             </li>
@@ -47,7 +47,9 @@ const Hero = () => {
               className="h-[400px] rounded-[70px]"
             />
           </div>
-          <div className="bg-slate-400 h-[400px] w-96"></div>
+          <div className="bg-slate-400 bg-opacity-20 h-[400px] w-96 backdrop-blur-sm rounded-2xl border-[1px] border-primary grid justify-center p-5">
+            <h1 className="text-xl text-primary font-bold">Links</h1>
+          </div>
         </section>
       </section>
     </main>
