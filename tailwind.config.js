@@ -1,4 +1,4 @@
-import { transform } from 'typescript';
+import { transform } from "typescript";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -56,10 +56,15 @@ export default {
               "rotate(360deg) translateY(var(--orbit-p-major-axis)) translateX(0px) rotate(-360deg)",
           },
         },
+        slide: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         "wide-orbit": "wide-orbit var(--orbit-duration) linear infinite",
         "narrow-orbit": "narrow-orbit var(--orbit-duration) linear infinite",
+        slide: "slide 60s linear infinite",
       },
     },
   },
