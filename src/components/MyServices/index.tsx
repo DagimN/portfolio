@@ -3,7 +3,7 @@ import ServiceTile from "./components/ServiceTile";
 
 const Services = () => {
   return (
-    <>
+    <div id="services">
       <div className="bg-gradient-to-t from-black to-transparent h-96 w-full" />
       <section className="relative h-[820px] w-full bg-black">
         <div className="z-0">
@@ -34,7 +34,7 @@ const Services = () => {
         </div>
       </section>
       <div className="bg-gradient-to-b from-[#07100d] to-transparent h-48 w-full" />
-    </>
+    </div>
   );
 };
 

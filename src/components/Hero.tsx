@@ -3,31 +3,29 @@ const Hero = () => {
     <main className="h-[800px]">
       <div className="h-[800px] w-full absolute z-0 opacity-30 bg-[url('https://capeeng.com/wp-content/uploads/2022/12/layer-wave.png')] bg-cover" />
       <section className="absolute z-10 w-full">
-        <nav className="p-10 z-10 relative top-0">
-          <ul className="flex gap-3 justify-between text-saturated-green">
-            <li className="">
-              <a href="#">Nav1</a>
-            </li>
-            <li>
-              <a href="#">Nav2</a>
-            </li>
-            <li>
-              <a href="#">Nav3</a>
-            </li>
-            <li>
-              <a href="#">Nav4</a>
-            </li>
-            <li>
-              <a href="#">Nav5</a>
-            </li>
-          </ul>
-        </nav>
-
         <header className="grid justify-center">
           <h1 className="text-saturated-green font-bold text-5xl m-5">
             {"<HelloWorld>"}
           </h1>
         </header>
+        
+        <nav className="p-10 z-10 relative top-0">
+          <ul className="flex gap-3 justify-between text-saturated-green">
+            <li className="">
+              <a href="#showcase">Nav1</a>
+            </li>
+            <li>
+              <a href="#reviews">Nav2</a>
+            </li>
+            <li>
+              <a href="#services">Nav3</a>
+            </li>
+            <li>
+              <a href="#timeline">Nav4</a>
+            </li>
+          </ul>
+        </nav>
+
         <section className="flex col-span-3 gap-24 p-24">
           <div className="mt-32 w-96">
             <h1 className="text-saturated-green font-semibold text-3xl my-5">

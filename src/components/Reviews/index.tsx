@@ -3,7 +3,7 @@ import data from "./data/dummy.json";
 
 const Reviews = () => {
   return (
-    <div className="py-32 overflow-hidden h-96 flex">
+    <div id="reviews" className="py-32 overflow-hidden h-96 flex">
       <div className="animate-slide inline-flex delay-1000">
         {data.map((item) => (
           <ReviewCard
