@@ -17,7 +17,8 @@
   {
     "title": "Mobile Development",
     "description": "Creating applications for iOS and Android",
-    "image": "src\\assets\\images\\mobile.png"
+    "image": "src\\assets\\images\\mobile.png",
+    "icons": ["src\\assets\\icons\\flutter.png"]
   },
   {
     "title": "Desktop Development",
@@ -26,7 +27,7 @@
   },
   {
     "title": "Bots",
-    "description": "Automating tasks and interactions i.e. Telegram/Discord etc",
+    "description": "Automating tasks and interactions",
     "image": "src\\assets\\images\\bots.png"
   }
 ]
