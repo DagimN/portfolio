@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    --bg-back-drop: #2C2D29;
-    --primary: #00A8E0;
-    --secondary: #2FC29E;
-    --saturated-green: #00EF5D;
-    background-color: var(--bg-back-drop);
-} 
+:root {
+  --bg-back-drop: #2c2d29;
+  --primary: #00a8e0;
+  --secondary: #2fc29e;
+  --saturated-green: #00ef5d;
+  background-color: var(--bg-back-drop);
+}
+
+html {
+  scroll-behavior: smooth;
+}

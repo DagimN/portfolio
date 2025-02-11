@@ -8,20 +8,17 @@ const Hero = () => {
             {"<HelloWorld>"}
           </h1>
         </header>
-        
+
         <nav className="p-10 z-10 relative top-0">
-          <ul className="flex gap-3 justify-between text-saturated-green">
-            <li className="">
-              <a href="#showcase">Nav1</a>
+          <ul className="flex gap-3 justify-evenly text-saturated-green underline">
+            <li>
+              <a href="#timeline">Timeline</a>
             </li>
             <li>
-              <a href="#reviews">Nav2</a>
+              <a href="#services">Services</a>
             </li>
             <li>
-              <a href="#services">Nav3</a>
-            </li>
-            <li>
-              <a href="#timeline">Nav4</a>
+              <a href="#reviews">Reviews</a>
             </li>
           </ul>
         </nav>
