@@ -2,32 +2,57 @@
   {
     "title": "UI/UX Design",
     "description": "Crafting visually appealing and user-friendly interfaces",
-    "image": "src\\assets\\images\\ux.png"
+    "image": "src\\assets\\images\\ux.png",
+    "icons": [
+      "src\\assets\\icons\\figma.png",
+      "src\\assets\\icons\\tailwind.png"
+    ]
   },
   {
     "title": "Backend Servers",
     "description": "Handling server-side logic, databases, and APIs",
-    "image": "src\\assets\\images\\server.png"
+    "image": "src\\assets\\images\\server.png",
+    "icons": [
+      "src\\assets\\icons\\nodejs.png",
+      "src\\assets\\icons\\nextjs.png",
+      "src\\assets\\icons\\nestjs.png"
+    ]
   },
   {
     "title": "Full Stack",
     "description": "Developing both front-end and back-end of applications",
-    "image": "src\\assets\\images\\stack.png"
+    "image": "src\\assets\\images\\stack.png",
+    "icons": [
+      "src\\assets\\icons\\react.png",
+      "src\\assets\\icons\\mongodb.png"
+    ]
   },
   {
     "title": "Mobile Development",
     "description": "Creating applications for iOS and Android",
     "image": "src\\assets\\images\\mobile.png",
-    "icons": ["src\\assets\\icons\\flutter.png"]
+    "icons": [
+      "src\\assets\\icons\\flutter.png",
+      "src\\assets\\icons\\android.png",
+      "src\\assets\\icons\\ios.png"
+    ]
   },
   {
     "title": "Desktop Development",
     "description": "Building software applications for Windows, macOS, and Linux.",
-    "image": "src\\assets\\images\\desktop.png"
+    "image": "src\\assets\\images\\desktop.png",
+    "icons": [
+      "src\\assets\\icons\\flutter.png",
+      "src\\assets\\icons\\dotnet.png"
+    ]
   },
   {
     "title": "Bots",
     "description": "Automating tasks and interactions",
-    "image": "src\\assets\\images\\bots.png"
+    "image": "src\\assets\\images\\bots.png",
+    "icons": [
+      "src\\assets\\icons\\telegram.png",
+      "src\\assets\\icons\\discord.webp"
+    ]
   }
 ]
