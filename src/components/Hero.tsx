@@ -28,7 +28,7 @@ const Hero = () => {
             <h1 className="text-saturated-green font-semibold text-3xl my-5">
               Hi there!!!
             </h1>
-            <h2 className="text-gray-400 font-light">
+            <h2 className="text-subtitle font-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatem possimus fugiat maxime expedita adipisci minima facere,
               non quaerat unde veniam omnis odio eveniet quae, blanditiis

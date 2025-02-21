@@ -9,6 +9,8 @@ export default {
         "back-drop": "var(--bg-back-drop)",
         primary: "var(--primary)",
         secondary: "var(--secondary)",
+        title: "var(--text-title)",
+        subtitle: "var(--text-subtitle)",
         "saturated-green": "var(--saturated-green)",
       },
       keyframes: {

@@ -7,6 +7,8 @@
   --primary: #00a8e0;
   --secondary: #2fc29e;
   --saturated-green: #00ef5d;
+  --text-title: #d1d5db;
+  --text-subtitle: #9ca3af;
   background-color: var(--bg-back-drop);
 }
 
