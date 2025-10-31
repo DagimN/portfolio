@@ -1,17 +1,21 @@
+import GlowingLine from "./components/GlowingLine";
 import TimelineCard from "./components/TimelineCard";
 import data from "./data/index.json";
 
 const Timeline = () => {
   return (
-    <section
+    <div className="relative">
+      <section
       id="timeline"
-      className="w-full grid justify-center content-start bg-"
+      className="grid place-items-center"
     >
-      {/* TODO: Implement timeline animation */}
       {data.map((item, index) => (
         <TimelineCard data={item} index={index} />
       ))}
-    </section>
+      </section>
+      <GlowingLine/>
+    </div>
+    
   );
 };
 
