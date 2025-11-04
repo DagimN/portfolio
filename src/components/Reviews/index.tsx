@@ -3,7 +3,7 @@ import data from "./data/data.json";
 
 const Reviews = () => {
   return (
-    <div id="reviews" className="py-32 overflow-hidden h-96 flex">
+    <div id="clients" className="py-32 overflow-hidden h-96 flex">
       <div className="animate-slide inline-flex delay-1000">
         {data.map((item) => (
           <ReviewCard

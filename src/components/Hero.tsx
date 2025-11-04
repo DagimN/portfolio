@@ -18,7 +18,7 @@ const Hero = () => {
               <a href="#services">Services</a>
             </li>
             <li>
-              <a href="#reviews">Reviews</a>
+              <a href="#clients">Clients</a>
             </li>
           </ul>
         </nav>
