@@ -1,5 +1,5 @@
 import ReviewCard from "./components/ReviewCard";
-import data from "./data/dummy.json";
+import data from "./data/data.json";
 
 const Reviews = () => {
   return (
@@ -9,7 +9,6 @@ const Reviews = () => {
           <ReviewCard
             avatar={item.avatar}
             reviewer={item.reviewer}
-            review={item.review}
           />
         ))}
       </div>
@@ -18,7 +17,6 @@ const Reviews = () => {
           <ReviewCard
             avatar={item.avatar}
             reviewer={item.reviewer}
-            review={item.review}
           />
         ))}
       </div>
