@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 const GlowingLine = () => {
   const { scrollYProgress } = useScroll();
-  const height = useTransform(scrollYProgress, [0, 0.32], ["0px", "1540px"]);
+  const height = useTransform(scrollYProgress, [0, 0.32], ["0px", "1090px"]);
 
   return (
     <motion.div
