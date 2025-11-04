@@ -43,7 +43,8 @@
     "image": "src\\assets\\images\\desktop.png",
     "icons": [
       "src\\assets\\icons\\flutter.png",
-      "src\\assets\\icons\\dotnet.png"
+      "src\\assets\\icons\\dotnet.png",
+      "src\\assets\\icons\\electron.png"
     ]
   },
   {
