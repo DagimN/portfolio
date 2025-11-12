@@ -12,6 +12,7 @@ export default {
         title: "var(--text-title)",
         subtitle: "var(--text-subtitle)",
         "saturated-green": "var(--saturated-green)",
+        "pale-secondary": "var(--pale-secondary)",
       },
       keyframes: {
         "wide-orbit": {

@@ -1,3 +1,5 @@
+import ContactsCard from "./components/ContactsCard";
+
 const Hero = () => {
   return (
     <main className="h-[800px]">
@@ -25,7 +27,7 @@ const Hero = () => {
 
         <section className="flex col-span-3 gap-24 p-24">
           <div className="mt-32 w-96">
-            <h1 className="text-saturated-green font-semibold text-3xl my-5">
+            <h1 className="text-primary font-semibold text-3xl my-5">
               Hi there!!!
             </h1>
             <h2 className="text-subtitle font-light">
@@ -42,9 +44,7 @@ const Hero = () => {
               className="h-[400px] rounded-[70px]"
             />
           </div>
-          <div className="bg-slate-400 bg-opacity-20 h-[400px] w-96 backdrop-blur-sm rounded-2xl border-[1px] border-primary grid justify-center p-5">
-            <h1 className="text-xl text-primary font-bold">Links</h1>
-          </div>
+          <ContactsCard />
         </section>
       </section>
     </main>
