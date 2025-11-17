@@ -2,7 +2,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Services from "./components/MyServices";
 import Reviews from "./components/Reviews";
-import ShowCaseOrbit from "./components/ShowCaseOrbit";
+import ShowCasePanel from "./components/ShowCase";
 import Timeline from "./components/Timeline";
 
 const Portfolio = () => {
@@ -11,7 +11,7 @@ const Portfolio = () => {
       <Hero />
       <Timeline />
       <span id="services" />
-      <ShowCaseOrbit />
+      <ShowCasePanel />
       <Services />
       <Reviews />
       <Footer />
