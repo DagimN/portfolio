@@ -21,7 +21,7 @@ const ShowCasePanel = () => {
 
       <div className="relative px-6 pt-20">
         {["", "", "", "", "", ""].map((_, index) => {
-          const trigger = (index + 1) * 70 + 1845;
+          const trigger = index == 0 ? 1845 : (index + 1) * 100 + 1845;
 
           return (
             <ShowCaseItem
