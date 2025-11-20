@@ -22,11 +22,24 @@ const ShowCasePanel = () => {
       <div className="relative px-6 pt-20">
         {["", "", "", "", "", ""].map((_, index) => {
           const trigger = index == 0 ? 1845 : (index + 1) * 100 + 1845;
+          const offset = trigger + 10;
 
           return (
             <ShowCaseItem
               key={`showcase-${index}`}
               offset={scrollY < trigger ? "1000px" : `${index * 100}px`}
+              endTrigger={scrollY > offset}
+              content={{
+                title: "Sample Project",
+                description: "lorem ipsum dolor sit amet consectetur",
+                media: [
+                  {
+                    url: "https://cdn.sanity.io/images/599r6htc/regionalized/dd1a495b8b4851ea64959fe6ea1d29f683ff226d-2400x2400.png",
+                    duration: 3000,
+                    type: "image",
+                  },
+                ],
+              }}
             />
           );
         })}
