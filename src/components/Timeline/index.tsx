@@ -5,17 +5,13 @@ import data from "./data/index.json";
 const Timeline = () => {
   return (
     <div className="relative">
-      <section
-      id="timeline"
-      className="grid place-items-center"
-    >
-      {data.map((item, index) => (
-        <TimelineCard data={item} index={index} />
-      ))}
+      <section id="timeline" className="grid place-items-center">
+        {data.map((item, index) => (
+          <TimelineCard key={`timeline-${index}`} data={item} index={index} />
+        ))}
       </section>
-      <GlowingLine/>
+      <GlowingLine />
     </div>
-    
   );
 };
 

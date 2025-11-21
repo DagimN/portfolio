@@ -23,8 +23,9 @@ const Services = () => {
             Services
           </h1>
           <div className="bg-gray-400 w-full h-[75%] bg-opacity-30 backdrop-blur-sm grid grid-cols-3 justify-center items-center justify-items-center rounded-[50px] border-primary border-opacity-10 border-[1px]">
-            {data.map((service) => (
+            {data.map((service, index) => (
               <ServiceTile
+                key={`service-${index}`}
                 title={service.title}
                 description={service.description}
                 image={service.image}

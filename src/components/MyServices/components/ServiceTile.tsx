@@ -23,8 +23,13 @@ const ServiceTile = ({
         />
         {icons ? (
           <div className="flex flex-wrap absolute z-10 w-[200%] h-full top-0 left-[-50%] rounded-[20px] group-hover:visible invisible justify-center items-center gap-5">
-            {icons.map((icon) => (
-              <img src={icon} alt="" className="w-14 h-16 object-contain bg-teal-300/10 rounded-md p-1" />
+            {icons.map((icon, index) => (
+              <img
+                key={`service-icon-${index}`}
+                src={icon}
+                alt=""
+                className="w-14 h-16 object-contain bg-teal-300/10 rounded-md p-1"
+              />
             ))}
           </div>
         ) : (
