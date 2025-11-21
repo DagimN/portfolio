@@ -22,7 +22,7 @@ const TimelineCard = ({
   return (
     <div
       className={`my-10 h-fit flex place-content-center items-center relative ${
-        index % 2 != 0 ? "right-[288px]" : "left-[289px]"
+        index % 2 != 0 ? "right-[19.64%]" : "left-[19.71%]"
       } ${
         isExpanded ? "w-[40%] opacity-100" : "w-[10%] opacity-0"
       } duration-300 ease-in-out`}
