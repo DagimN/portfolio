@@ -38,6 +38,11 @@ const ShowCasePanel = () => {
                     duration: 3000,
                     type: "image",
                   },
+                  {
+                    url: "https://www.holamediasolutions.com/wp-content/uploads/2020/09/web-design-1.jpg",
+                    duration: 10000,
+                    type: "image",
+                  },
                 ],
               }}
             />

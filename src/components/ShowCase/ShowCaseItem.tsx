@@ -64,32 +64,66 @@ const ShowCaseItem = ({
         {content.media[mediaIndex].type === "video" ? (
           <video
             src={content.media[mediaIndex].url}
-            className="w-full h-full bg-white/20 rounded-r-[50px] object-fill opacity-70"
+            className="w-full h-full bg-white/20 rounded-r-[50px] opacity-70"
             autoPlay
             muted
           />
         ) : (
-          <img
-            src={content.media[mediaIndex].url}
-            alt=""
-            className="w-full h-full bg-white/20 rounded-r-[50px] object-fill opacity-70"
-          />
+          <div className="relative">
+            <img
+              src={content.media[mediaIndex].url}
+              alt=""
+              className="w-full h-96 bg-white/20 rounded-r-[50px] object-cover opacity-50 z-0 relative"
+            />
+            <div className="w-full h-96 bg-gray-300/30 rounded-r-[50px] backdrop-blur-md absolute top-0 left-0 z-10" />
+            <img
+              src={content.media[mediaIndex].url}
+              alt=""
+              className="w-full h-96 rounded-r-[50px] object-contain absolute top-0 left-0 z-30"
+            />
+          </div>
         )}
 
-        {content.media.length > 1 && (
-          <div className="absolute top-1/2 -translate-y-1/2 flex justify-between w-full px-8">
-            <button
-              onClick={prevMedia}
-              className="rounded-full bg-white h-10 w-10 shadow-xl flex justify-center items-center"
-            >
-              <FaChevronLeft />
-            </button>
-            <button
-              onClick={nextMedia}
-              className="rounded-full bg-white h-10 w-10 shadow-xl flex justify-center items-center"
-            >
-              <FaChevronRight />
-            </button>
+        {content.media.length > -1 && (
+          <div className="absolute bottom-4 w-full px-8 grid gap-4 z-40">
+            <div className="flex justify-center gap-6 w-full px-8">
+              <button
+                onClick={prevMedia}
+                className="rounded-full bg-white h-6 w-6 shadow-xl flex justify-center items-center"
+              >
+                <FaChevronLeft size={12} />
+              </button>
+              <button
+                onClick={nextMedia}
+                className="rounded-full bg-white h-6 w-6 shadow-xl flex justify-center items-center"
+              >
+                <FaChevronRight size={12} />
+              </button>
+            </div>
+
+            <div className="flex justify-center">
+              {content.media.map((media, index) => (
+                <span
+                  key={`media-indicator-${index}`}
+                  className={`h-2 rounded-full relative mx-1 bg-gray-400 ${
+                    index === mediaIndex ? "w-6" : " w-2"
+                  }`}
+                >
+                  <span
+                    className={`h-2 rounded-full absolute top-0 left-0 ${
+                      index === mediaIndex
+                        ? `bg-white w-6 animate-[growWidth_var(--duration)_linear_forwards]`
+                        : "bg-gray-400 w-2"
+                    }`}
+                    style={
+                      {
+                        "--duration": `${media.duration}ms`,
+                      } as React.CSSProperties
+                    }
+                  />
+                </span>
+              ))}
+            </div>
           </div>
         )}
       </div>
