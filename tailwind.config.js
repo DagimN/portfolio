@@ -19,6 +19,10 @@ export default {
           "0%": { width: "0%" },
           "100%": { width: "100%" },
         },
+        slide: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         "wide-orbit": "wide-orbit var(--orbit-duration) linear infinite",
