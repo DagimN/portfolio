@@ -50,7 +50,7 @@ const ShowCaseItem = ({
 
   return (
     <div
-      className={`bg-gray-400 bg-opacity-30 backdrop-blur-sm border-primary border-opacity-10 border-[1px] rounded-[50px] h-96 absolute ${offset} w-full shadow-xl transition-transform flex justify-between`}
+      className={`bg-gray-400 bg-opacity-30 backdrop-blur-sm border-primary border-opacity-10 border-[1px] rounded-[50px] absolute ${offset} w-full shadow-xl transition-transform md:flex justify-between`}
       style={{ top: offset, transition: "top 300ms ease-in-out" }}
     >
       <div>
@@ -60,11 +60,11 @@ const ShowCaseItem = ({
         <p className="text-white p-8 pt-0">{content.description}</p>
       </div>
 
-      <div className=" w-1/2 h-full relative">
+      <div className="w-full md:w-1/2 h-full relative">
         {content.media[mediaIndex].type === "video" ? (
           <video
             src={content.media[mediaIndex].url}
-            className="w-full h-full bg-white/20 rounded-r-[50px] opacity-70"
+            className="w-full h-full bg-white/20 rounded-br-[50px] rounded-bl-[50px] rounded-tr-none md:rounded-tr-[50px] md:rounded-br-[50px] md:rounded-bl-none opacity-70"
             autoPlay
             muted
           />
@@ -73,13 +73,13 @@ const ShowCaseItem = ({
             <img
               src={content.media[mediaIndex].url}
               alt=""
-              className="w-full h-96 bg-white/20 rounded-r-[50px] object-cover opacity-50 z-0 relative"
+              className="w-full h-96 bg-white/20 rounded-br-[50px] rounded-bl-[50px] rounded-tr-none md:rounded-tr-[50px] md:rounded-br-[50px] md:rounded-bl-none object-cover opacity-50 z-0 relative"
             />
-            <div className="w-full h-96 bg-gray-300/30 rounded-r-[50px] backdrop-blur-md absolute top-0 left-0 z-10" />
+            <div className="w-full h-96 bg-gray-300/30 rounded-br-[50px] rounded-bl-[50px] rounded-tr-none md:rounded-tr-[50px] md:rounded-br-[50px] md:rounded-bl-none backdrop-blur-md absolute top-0 left-0 z-10" />
             <img
               src={content.media[mediaIndex].url}
               alt=""
-              className="w-full h-96 rounded-r-[50px] object-contain absolute top-0 left-0 z-30"
+              className="w-full h-96 rounded-br-[50px] rounded-bl-[50px] rounded-tr-none md:rounded-tr-[50px] md:rounded-br-[50px] md:rounded-bl-none object-contain absolute top-0 left-0 z-30"
             />
           </div>
         )}

@@ -2,11 +2,11 @@ import ContactsCard from "./components/ContactsCard";
 
 const Hero = () => {
   return (
-    <main className="h-[800px]">
-      <div className="h-[800px] w-full absolute z-0 opacity-30 bg-[url('https://capeeng.com/wp-content/uploads/2022/12/layer-wave.png')] bg-cover" />
+    <main className="h-[1600px] sm:h-[1400px] lg:h-[800px]">
+      <div className="h-[1600px] md:h-[800px] w-full absolute z-0 opacity-30 bg-[url('https://capeeng.com/wp-content/uploads/2022/12/layer-wave.png')] bg-cover" />
       <section className="absolute z-10 w-full">
         <header className="grid justify-center">
-          <h1 className="text-saturated-green font-bold text-5xl m-5">
+          <h1 className="text-saturated-green font-bold text-3xl sm:text-5xl m-5">
             {"<HelloWorld>"}
           </h1>
         </header>
@@ -25,7 +25,7 @@ const Hero = () => {
           </ul>
         </nav>
 
-        <section className="flex col-span-3 gap-24 p-24">
+        <section className="col-span-3 gap-24 p-24 lg:flex hidden justify-center">
           <div className="mt-32 w-96">
             <h1 className="text-primary font-semibold text-3xl my-5">
               Hi there!!!
@@ -37,14 +37,39 @@ const Hero = () => {
               repellendus dicta mollitia temporibus vitae?
             </h2>
           </div>
-          <div className="bg-gradient-to-br from-primary to-secondary rounded-full h-96 w-96">
+          <div className="bg-gradient-to-br from-primary to-secondary rounded-full w-96 h-96">
             <img
               src="https://cdn3d.iconscout.com/3d/premium/thumb/cute-black-boy-3d-icon-download-in-png-blend-fbx-gltf-file-formats--man-avatar-pack-people-icons-5012785.png?f=webp"
               alt="cover"
-              className="h-[400px] rounded-[70px]"
+              className="h-[400px] rounded-[70px] object-contain"
             />
           </div>
           <ContactsCard />
+        </section>
+
+        <section className="col-span-3 gap-24 p-6 sm:p-24 lg:hidden md:grid content-center justify-items-center">
+          <div className="md:flex grid gap-8">
+            <div className="md:w-[55%] sm:text-left text-center">
+              <h1 className="text-primary font-semibold text-3xl my-5">
+                Hi there!!!
+              </h1>
+              <h2 className="text-subtitle font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem possimus fugiat maxime expedita adipisci minima
+                facere, non quaerat unde veniam omnis odio eveniet quae,
+                blanditiis repellendus dicta mollitia temporibus vitae?
+              </h2>
+            </div>
+            <ContactsCard />
+          </div>
+
+          <div className="bg-gradient-to-br from-primary to-secondary rounded-full sm:mt-20 mt-56 md:w-96 md:h-96">
+            <img
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/cute-black-boy-3d-icon-download-in-png-blend-fbx-gltf-file-formats--man-avatar-pack-people-icons-5012785.png?f=webp"
+              alt="cover"
+              className="sm:h-[400px] rounded-[70px] object-contain"
+            />
+          </div>
         </section>
       </section>
     </main>

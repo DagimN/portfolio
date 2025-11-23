@@ -3,25 +3,43 @@ import ShowCaseItem from "./ShowCaseItem";
 
 const ShowCasePanel = () => {
   const [scrollY, setScrollY] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
+    setWindowWidth(window.innerWidth);
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
     <div
       id="showcases"
-      className="duration-1000 mt-48 relative mx-24 pb-[500px]"
+      className="duration-1000 mt-48 relative px-8 pb-[700px] md:pb-[500px]"
     >
       <h1 className="text-5xl text-saturated-green font-bold my-5">Projects</h1>
 
-      <div className="relative px-6 pt-20">
+      <div className="relative pt-20">
         {["", "", "", "", "", ""].map((_, index) => {
-          const trigger = index == 0 ? 1845 : (index + 1) * 100 + 1845;
+          const triggerHeight =
+            windowWidth > 1020
+              ? 1845
+              : windowWidth > 800
+              ? 2500
+              : windowWidth > 400
+              ? 2700
+              : 2840;
+          const trigger =
+            index == 0 ? triggerHeight : (index + 1) * 100 + triggerHeight;
           const offset = trigger + 10;
 
           return (
