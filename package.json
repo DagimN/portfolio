@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d dist -b github-page --repo https://github.com/DagimN/portfolio.git"
+    "deploy": "gh-pages -d dist -b gh-pages --repo https://github.com/DagimN/portfolio.git"
   },
   "dependencies": {
     "framer-motion": "^12.23.24",

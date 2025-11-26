@@ -19,7 +19,7 @@ const ShowCaseItem = ({
   endTrigger: boolean;
 }) => {
   const [mediaIndex, setMediaIndex] = useState(0);
-  let interval: NodeJS.Timeout;
+  let interval: any;
 
   const nextMedia = () => {
     clearInterval(interval);
