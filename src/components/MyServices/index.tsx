@@ -1,4 +1,4 @@
-import data from "./data/index.json";
+import data from "./data";
 import ServiceTile from "./components/ServiceTile";
 
 const Services = () => {

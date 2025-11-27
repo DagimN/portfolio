@@ -1,5 +1,5 @@
 import ReviewCard from "./components/ReviewCard";
-import data from "./data/data.json";
+import data from "./data";
 
 const Reviews = () => {
   return (
