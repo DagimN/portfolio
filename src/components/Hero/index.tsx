@@ -1,6 +1,9 @@
 import ContactsCard from "./components/ContactsCard";
 
 const Hero = () => {
+  const bio =
+    "I’m a software engineer with experience building modern, user-focused platforms across ecommerce, hospitality, social apps, and marketplaces. I enjoy working with a variety of web technologies, creating clean, responsive, and intuitive digital experiences. I also love to explore new skills and work on side-projects for experimenting and exploring different technologies. I bring energy, curiosity, and a strong product mindset to every project I take on.";
+
   return (
     <main className="h-[1600px] sm:h-[1400px] lg:h-[800px]">
       <div className="h-[1600px] md:h-[800px] w-full absolute z-0 opacity-30 bg-[url('https://capeeng.com/wp-content/uploads/2022/12/layer-wave.png')] bg-cover" />
@@ -30,12 +33,7 @@ const Hero = () => {
             <h1 className="text-primary font-semibold text-3xl my-5">
               Hi there!!!
             </h1>
-            <h2 className="text-subtitle font-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem possimus fugiat maxime expedita adipisci minima facere,
-              non quaerat unde veniam omnis odio eveniet quae, blanditiis
-              repellendus dicta mollitia temporibus vitae?
-            </h2>
+            <h2 className="text-subtitle font-light">{bio}</h2>
           </div>
           <div className="bg-gradient-to-br from-primary to-secondary rounded-full w-96 h-96">
             <img
@@ -53,12 +51,7 @@ const Hero = () => {
               <h1 className="text-primary font-semibold text-3xl my-5">
                 Hi there!!!
               </h1>
-              <h2 className="text-subtitle font-light">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem possimus fugiat maxime expedita adipisci minima
-                facere, non quaerat unde veniam omnis odio eveniet quae,
-                blanditiis repellendus dicta mollitia temporibus vitae?
-              </h2>
+              <h2 className="text-subtitle font-light">{bio}</h2>
             </div>
             <ContactsCard />
           </div>
