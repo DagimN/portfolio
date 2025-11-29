@@ -37,7 +37,7 @@ const ServiceTile = ({
         )}
       </div>
 
-      <h1 className="text-title text-lg font-semibold">{title}</h1>
+      <h1 className="text-title text-lg font-semibold text-center">{title}</h1>
       <h2 className="text-subtitle text-sm font-thin text-center w-2/3">
         {description}
       </h2>
