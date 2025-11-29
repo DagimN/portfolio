@@ -53,7 +53,7 @@ const ShowCaseItem = ({
       className={`bg-gray-400 bg-opacity-30 backdrop-blur-sm border-primary border-opacity-10 border-[1px] rounded-[50px] absolute ${offset} w-full shadow-xl transition-transform md:flex justify-between`}
       style={{ top: offset, transition: "top 300ms ease-in-out" }}
     >
-      <div className="w-1/2">
+      <div className="md:w-1/2">
         <h2 className="text-3xl text-white font-semibold p-8">
           {content.title}
         </h2>
