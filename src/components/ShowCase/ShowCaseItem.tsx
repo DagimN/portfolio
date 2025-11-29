@@ -84,7 +84,7 @@ const ShowCaseItem = ({
           </div>
         )}
 
-        {content.media.length > -1 && (
+        {content.media.length > 1 && (
           <div className="absolute bottom-4 w-full px-8 grid gap-4 z-40">
             <div className="flex justify-center gap-6 w-full px-8">
               <button
