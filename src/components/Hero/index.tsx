@@ -49,7 +49,7 @@ const Hero = () => {
           <div className="md:flex grid gap-8">
             <div className="md:w-[55%] sm:text-left text-center">
               <h1 className="text-primary font-semibold text-3xl my-5">
-                Hi there!!!
+                {"<HelloWorld>"}
               </h1>
               <h2 className="text-subtitle font-light">{bio}</h2>
             </div>
