@@ -32,7 +32,7 @@ const TimelineCard = ({
       )}
       <div className="relative w-full z-10">
         <div
-          className={`border-2 border-primary rounded-xl ${
+          className={`rounded-xl ${
             isExpanded ? "w-full px-6 py-2" : ""
           } bg-slate-400 bg-opacity-20 backdrop-blur-sm`}
         >

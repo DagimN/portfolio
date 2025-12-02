@@ -2,7 +2,7 @@ import ContactsCard from "./components/ContactsCard";
 
 const Hero = () => {
   const bio =
-    "I’m a software engineer with experience building modern, user-focused platforms across ecommerce, hospitality, social apps, and marketplaces. I enjoy working with a variety of web technologies, creating clean, responsive, and intuitive digital experiences. I also love to explore new skills and work on side-projects for experimenting and exploring different technologies. I bring energy, curiosity, and a strong product mindset to every project I take on.";
+    "I’m a software engineer with experience building modern, user-focused platforms across ecommerce, hospitality, social apps, and marketplaces. I enjoy working with a variety of web technologies by creating clean, responsive, and intuitive digital experiences. I also love to explore new skills and work on side-projects for experimenting and exploring different technologies. I bring energy, curiosity, and a strong product mindset to every project I take on.";
 
   return (
     <main className="h-[1600px] sm:h-[1400px] lg:h-[800px]">
@@ -10,7 +10,7 @@ const Hero = () => {
       <section className="absolute z-10 w-full">
         <header className="grid justify-center">
           <h1 className="text-saturated-green font-bold text-3xl sm:text-5xl m-5">
-            {"<HelloWorld>"}
+            Dagmawi Nebiat
           </h1>
         </header>
 
@@ -29,9 +29,9 @@ const Hero = () => {
         </nav>
 
         <section className="col-span-3 gap-24 p-24 lg:flex hidden justify-center">
-          <div className="mt-32 w-96">
+          <div className="mt-20 w-96">
             <h1 className="text-primary font-semibold text-3xl my-5">
-              Hi there!!!
+              {"<HelloWorld>"}
             </h1>
             <h2 className="text-subtitle font-light">{bio}</h2>
           </div>

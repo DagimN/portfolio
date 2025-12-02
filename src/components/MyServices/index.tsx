@@ -3,9 +3,9 @@ import ServiceTile from "./components/ServiceTile";
 
 const Services = () => {
   return (
-    <div>
-      <div className="bg-gradient-to-t from-black to-transparent h-96 w-full" />
-      <section className="relative h-[1680px] sm:h-[1040px] md:h-[820px] w-full bg-black">
+    <div className="relative">
+      <div className="bg-gradient-to-t from-black to-transparent absolute top-[-350px] z-20 h-96 w-full" />
+      <section className="relative h-[1680px] sm:h-[1040px] md:h-[820px] w-full mt-96 my-48 bg-black">
         <div className="z-0">
           <video
             src="https://videos.pexels.com/video-files/3130284/3130284-sd_640_360_30fps.mp4"
@@ -35,7 +35,7 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <div className="bg-gradient-to-b from-[#07100d] to-transparent h-48 w-full" />
+      <div className="bg-gradient-to-b from-[#07100d] to-transparent absolute bottom-[-190px] z-20 h-48 w-full" />
     </div>
   );
 };

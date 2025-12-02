@@ -25,7 +25,7 @@ const ShowCasePanel = () => {
   return (
     <div
       id="showcases"
-      className="duration-1000 mt-48 relative px-8 pb-[650px] md:pb-[450px]"
+      className="duration-1000 mt-48 relative px-8 pb-[750px] md:pb-[550px]"
     >
       <h1 className="text-5xl text-saturated-green font-bold my-5">Projects</h1>
 
@@ -46,7 +46,7 @@ const ShowCasePanel = () => {
           return (
             <ShowCaseItem
               key={`showcase-${index}`}
-              offset={scrollY < trigger ? "1500px" : `${index * 100}px`}
+              offset={scrollY < trigger ? "1500px" : `${index * 160}px`}
               endTrigger={scrollY > offset}
               content={content}
             />

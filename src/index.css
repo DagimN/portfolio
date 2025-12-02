@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --bg-back-drop: #2c2d29;
-  --primary: #00a8e0;
-  --secondary: #2fc29e;
+  --bg-back-drop: #14201d;
+  --primary: #07a7de;
+  --secondary: #23bbab;
   --pale-secondary: #7ef4d2;
-  --saturated-green: #00ef5d;
+  --saturated-green: #00ee60;
   --text-title: #d1d5db;
   --text-subtitle: #9ca3af;
   background-color: var(--bg-back-drop);

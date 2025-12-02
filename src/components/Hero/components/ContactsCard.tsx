@@ -3,9 +3,9 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const ContactsCard = () => {
   return (
-    <aside className="bg-slate-400 bg-opacity-20 h-[400px] md:w-[55%] lg:w-96 backdrop-blur-sm rounded-2xl border-[1px] border-primary grid justify-center p-5">
-      <h1 className="text-xl text-primary text-center font-bold">Contacts</h1>
-      <ul className="grid gap-3 text-center">
+    <aside className="bg-slate-400 bg-opacity-20 h-[380px] md:w-[55%] lg:w-96 backdrop-blur-sm rounded-2xl border-[1px] border-primary grid justify-center p-5">
+      <h1 className="text-2xl text-primary text-center font-bold">Contacts</h1>
+      <ul className="grid gap-5 text-center">
         <a
           target="_blank"
           href="mailto:dagmnebiat.work@gmail.com"

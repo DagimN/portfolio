@@ -50,7 +50,7 @@ const ShowCaseItem = ({
 
   return (
     <div
-      className={`bg-gray-400 bg-opacity-30 backdrop-blur-sm border-primary border-opacity-10 border-[1px] rounded-[50px] absolute ${offset} w-full shadow-xl transition-transform md:flex justify-between`}
+      className={`bg-gray-400 bg-opacity-30 backdrop-blur-sm  rounded-[50px] absolute ${offset} w-full shadow-xl transition-transform md:flex justify-between`}
       style={{ top: offset, transition: "top 300ms ease-in-out" }}
     >
       <div className="md:w-1/2">

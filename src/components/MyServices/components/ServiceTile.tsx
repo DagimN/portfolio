@@ -13,7 +13,7 @@ const ServiceTile = ({
 }) => {
   return (
     <div
-      className={`grid justify-items-center ${className} w-[80%] hover:scale-110 duration-300 border-[1px] rounded-3xl p-3 border-transparent hover:border-secondary hover:z-10 hover:bg-gradient-to-br hover:from-[#00a8e056] hover:to-[#2fc29d2c] group`}
+      className={`grid justify-items-center ${className} w-[80%] hover:scale-110 duration-300 border-[1px] rounded-3xl p-3 border-transparent hover:border-secondary hover:z-10 group`}
     >
       <div className="relative">
         <img
