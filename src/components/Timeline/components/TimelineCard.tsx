@@ -37,7 +37,7 @@ const TimelineCard = ({
           } bg-slate-400 bg-opacity-20 backdrop-blur-sm`}
         >
           <h1 className="text-title font-bold text-lg"> {data.title}</h1>
-          <h2 className="text-subtitle text-sm p-2">{data.description}</h2>
+          <h2 className="text-subtitle text-sm py-2">{data.description}</h2>
           <h3 className="text-secondary float-right text-[12px] mt-3">
             {data.date}
           </h3>

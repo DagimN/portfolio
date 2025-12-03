@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className="relative">
       <div className="bg-gradient-to-t from-black to-transparent absolute top-[-350px] z-20 h-96 w-full" />
-      <section className="relative h-[1680px] sm:h-[1040px] md:h-[820px] w-full mt-96 my-48 bg-black">
+      <section className="relative h-[1980px] sm:h-[1040px] md:h-[820px] w-full mt-96 my-48 bg-black">
         <div className="z-0">
           <video
             src="https://videos.pexels.com/video-files/3130284/3130284-sd_640_360_30fps.mp4"

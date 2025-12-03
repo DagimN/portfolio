@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 const GlowingLine = () => {
   const [maxHeight, setMaxHeight] = useState<number>(1090);
+  const [isAtMax, setIsAtMax] = useState(false);
   const { scrollYProgress } = useScroll();
   const height = useTransform(
     scrollYProgress,
@@ -36,15 +37,46 @@ const GlowingLine = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const unsubscribe = scrollYProgress.onChange((v) => {
+      // show the point when progress reaches the mapped max (0.32)
+      setIsAtMax(v >= 0.32);
+    });
+    return () => unsubscribe();
+  }, [scrollYProgress]);
+
   return (
     <motion.div
       className="w-[4px] bg-cyan-400 rounded-full shadow-[0_0_20px_#22d3ee] absolute z-0 top-[-150px] left-1/2 -translate-x-1/2"
       style={{ height }}
       transition={{
-        duration: 1,
         ease: "easeInOut",
       }}
-    />
+    >
+      <motion.span
+        initial={{ opacity: 0, scale: 0 }}
+        animate={
+          isAtMax
+            ? {
+                // pulsate: grow a bit and pulse opacity
+                opacity: [1, 1, 1, 1],
+                scale: [1.25, 1, 1.25, 1],
+              }
+            : { opacity: 0, scale: 0 }
+        }
+        transition={
+          isAtMax
+            ? {
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "loop",
+                ease: "easeInOut",
+              }
+            : { type: "spring", stiffness: 300, damping: 20 }
+        }
+        className="w-3 h-3 bg-cyan-400 rounded-full shadow-[0_0_10px_#22d3ee] absolute right-[-5px] -bottom-2"
+      />
+    </motion.div>
   );
 };
 
