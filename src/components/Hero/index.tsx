@@ -1,4 +1,5 @@
 import ContactsCard from "./components/ContactsCard";
+import bannerLogo from "../../assets/images/banner-logo.png";
 
 const Hero = () => {
   const bio =
@@ -9,9 +10,7 @@ const Hero = () => {
       <div className="h-[1600px] md:h-[800px] w-full absolute z-0 opacity-30 bg-[url('https://capeeng.com/wp-content/uploads/2022/12/layer-wave.png')] bg-cover" />
       <section className="absolute z-10 w-full">
         <header className="grid justify-center">
-          <h1 className="text-saturated-green font-bold text-3xl sm:text-5xl m-5">
-            Dagmawi Nebiat
-          </h1>
+          <img src={bannerLogo} alt="" className="h-36" />
         </header>
 
         <nav className="p-10 z-10 relative top-0">
