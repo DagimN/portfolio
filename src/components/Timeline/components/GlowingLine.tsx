@@ -3,11 +3,12 @@ import { useEffect, useState } from "react";
 
 const GlowingLine = () => {
   const [maxHeight, setMaxHeight] = useState<number>(1090);
+  const [initialYProgress, setInitialYProgress] = useState<number>(0);
   const [isAtMax, setIsAtMax] = useState(false);
   const { scrollYProgress } = useScroll();
   const height = useTransform(
     scrollYProgress,
-    [0, 0.32],
+    [initialYProgress, 0.32],
     ["0px", `${maxHeight}px`]
   );
 
@@ -28,6 +29,14 @@ const GlowingLine = () => {
 
       if (width < 480) {
         setMaxHeight(1120);
+      }
+
+      if (width > 640 && initialYProgress === 0.13) {
+        setInitialYProgress(0);
+      }
+
+      if (width <= 640 && initialYProgress === 0) {
+        setInitialYProgress(0.13);
       }
     };
 
@@ -58,7 +67,6 @@ const GlowingLine = () => {
         animate={
           isAtMax
             ? {
-                // pulsate: grow a bit and pulse opacity
                 opacity: [1, 1, 1, 1],
                 scale: [1.25, 1, 1.25, 1],
               }
