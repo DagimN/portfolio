@@ -1,3 +1,11 @@
+import GardenHillsLanding from "../../../assets/videos/gardenhills-landing.mp4";
+import LebetLanding from "../../../assets/videos/lebet-landing.mp4";
+import One2OneLanding from "../../../assets/videos/one2one-landing.mp4";
+import One2OneWorkings from "../../../assets/videos/one2one-workings.mp4";
+import CastorLogo from "../../../assets/images/castor.png";
+import CastorDashboard from "../../../assets/images/castor-dashboard.png";
+import CastorWorkings from "../../../assets/videos/castor-workings.mp4";
+
 export default [
   {
     title: "Garden Hills Hotel",
@@ -8,6 +16,11 @@ export default [
         url: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/715277795.jpg?k=83ecd24380db488d2e7def8c62b02d572921b519a4fb43450e532040fd630203&o=",
         duration: 3000,
         type: "image",
+      },
+      {
+        url: GardenHillsLanding,
+        duration: 30000,
+        type: "video",
       },
     ],
   },
@@ -20,6 +33,11 @@ export default [
         url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeW14m3uJXfVVEspa3PRQ06S9FweRCfcx8yA&s",
         duration: 3000,
         type: "image",
+      },
+      {
+        url: LebetLanding,
+        duration: 48000,
+        type: "video",
       },
     ],
   },
@@ -77,52 +95,43 @@ export default [
       },
     ],
   },
-  // {
-  //   title: "One2One AI",
-  //   description: "lorem ipsum dolor sit amet consectetur",
-  //   media: [
-  //     {
-  //       url: "https://cdn.sanity.io/images/599r6htc/regionalized/dd1a495b8b4851ea64959fe6ea1d29f683ff226d-2400x2400.png",
-  //       duration: 3000,
-  //       type: "image",
-  //     },
-  //     {
-  //       url: "https://www.holamediasolutions.com/wp-content/uploads/2020/09/web-design-1.jpg",
-  //       duration: 10000,
-  //       type: "image",
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "Castor",
-  //   description: "lorem ipsum dolor sit amet consectetur",
-  //   media: [
-  //     {
-  //       url: "https://cdn.sanity.io/images/599r6htc/regionalized/dd1a495b8b4851ea64959fe6ea1d29f683ff226d-2400x2400.png",
-  //       duration: 3000,
-  //       type: "image",
-  //     },
-  //     {
-  //       url: "https://www.holamediasolutions.com/wp-content/uploads/2020/09/web-design-1.jpg",
-  //       duration: 10000,
-  //       type: "image",
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "Tesafari",
-  //   description: "lorem ipsum dolor sit amet consectetur",
-  //   media: [
-  //     {
-  //       url: "https://cdn.sanity.io/images/599r6htc/regionalized/dd1a495b8b4851ea64959fe6ea1d29f683ff226d-2400x2400.png",
-  //       duration: 3000,
-  //       type: "image",
-  //     },
-  //     {
-  //       url: "https://www.holamediasolutions.com/wp-content/uploads/2020/09/web-design-1.jpg",
-  //       duration: 10000,
-  //       type: "image",
-  //     },
-  //   ],
-  // },
+  {
+    title: "One2One AI",
+    description:
+      "One2One AI is a web app that delivers an AI-powered chatbot with both text and voice interactions (voice-cloning/voice-enabled responses). It includes user authentication, profile/subscription management, and modular chat UI components (avatar, message groups, streaming messages), demonstrating end-to-end AI-chat UX and voice integration suitable for influencers, creators, and brands.",
+    media: [
+      {
+        url: One2OneLanding,
+        duration: 25000,
+        type: "video",
+      },
+      {
+        url: One2OneWorkings,
+        duration: 18000,
+        type: "video",
+      },
+    ],
+  },
+  {
+    title: "Castor",
+    description:
+      "Built an Electron + React (Vite + TypeScript) desktop app that separates a control UI from a projector display, letting users load images/videos/PDFs, manage slides/lyrics, and present them on a fullscreen external display or via a remote browser view.",
+    media: [
+      {
+        url: CastorLogo,
+        duration: 3000,
+        type: "image",
+      },
+      {
+        url: CastorDashboard,
+        duration: 10000,
+        type: "image",
+      },
+      {
+        url: CastorWorkings,
+        duration: 64000,
+        type: "video",
+      },
+    ],
+  },
 ];

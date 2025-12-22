@@ -3,6 +3,7 @@ import gardenhills from "../../../assets/images/gardenhills.png";
 import linkup from "../../../assets/images/linkup.png";
 import wolelay from "../../../assets/images/wolelay.png";
 import unswype from "../../../assets/images/unswype.png";
+import livingwaychurch from "../../../assets/images/livingwaychurch.png";
 
 export default [
   {
@@ -24,5 +25,9 @@ export default [
   {
     avatar: unswype,
     reviewer: "UnSwype",
+  },
+  {
+    avatar: livingwaychurch,
+    reviewer: "Living Way Church",
   },
 ];

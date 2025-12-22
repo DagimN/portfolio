@@ -25,7 +25,7 @@ const ShowCasePanel = () => {
   return (
     <div
       id="showcases"
-      className="duration-1000 mt-48 relative px-6 pb-[750px] md:pb-[550px]"
+      className="duration-1000 mt-48 relative px-6 pb-[950px] md:pb-[750px]"
     >
       <h1 className="text-5xl text-saturated-green font-bold my-5">Projects</h1>
 
